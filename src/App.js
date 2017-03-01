@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import InputNumber from './InputNumber';
+import FormSubmit from './FormSubmit';
 
 class Author extends Component{
     constructor(props){
@@ -41,6 +42,7 @@ class App extends Component {
             <h3>数字输入框</h3>
             <InputNumber></InputNumber>
           </div>
+          <FormSubmit></FormSubmit>
       </div>
     );
   }
