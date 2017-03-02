@@ -46,6 +46,6 @@ class InputNumber extends Component {
 }
 ;
 InputNumber.propTypes = {
-    amount: React.PropTypes.number
+    amount: PropTypes.number
 };
 export  default InputNumber;
