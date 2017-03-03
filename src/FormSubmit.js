@@ -19,9 +19,10 @@ class AuthorList extends Component{
 		let authorNodeList = this.props.authorList.map((value,index)=>{
 			return <Comment key={'comment-' + index} author={value.author}>{value.info}</Comment>;
 		});
-		console.log(this.state);
+		console.log(authorNodeList);
 		return (
 			<div>
+				<span>huihier</span>
 				{authorNodeList}
 			</div>
 		);
@@ -42,10 +43,13 @@ class FormSubmit extends Component {
 		let form = this.refs.form;
 		// 清空输入框
 		form.reset();
-		this.state.authorArr.push({
+		let arr = this.state.authorArr.push({
 			author:author,
 			info:info
 		});
+		this.setState({
+			authorArr: arr
+		})
 		console.log(this.state.authorArr);
 		console.log(author,info);
 	}
