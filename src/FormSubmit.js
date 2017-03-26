@@ -43,13 +43,13 @@ class FormSubmit extends Component {
 		let form = this.refs.form;
 		// 清空输入框
 		form.reset();
-		let arr = this.state.authorArr.push({
-			author:author,
-			info:info
+		this.state.authorArr.push({
+			'author':author,
+			'info':info
 		});
-		this.setState({
-			authorArr: arr
-		})
+		// this.setState({
+		// 	authorArr: arr
+		// })
 		console.log(this.state.authorArr);
 		console.log(author,info);
 	}
