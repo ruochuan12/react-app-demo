@@ -47,9 +47,6 @@ class FormSubmit extends Component {
 			'author':author,
 			'info':info
 		});
-		// this.setState({
-		// 	authorArr: arr
-		// })
 		console.log(this.state.authorArr);
 		console.log(author,info);
 	}
