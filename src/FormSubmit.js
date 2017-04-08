@@ -1,3 +1,4 @@
+// [官方 React 快速上手脚手架 create-react-app](http://blog.parryqiu.com/2017/04/05/create-react-app/)
 import React, { Component } from 'react';
 class Comment extends Component {
   render() {
