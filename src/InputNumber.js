@@ -4,6 +4,8 @@
  * @time: 2017-02-27
  */
 import React, {Component, PropTypes} from 'react';
+import ReactMixins from 'react-mixin';
+import MixinsLog from './reactMixins';
 
 class InputNumber extends Component {
     constructor() {
@@ -35,6 +37,7 @@ class InputNumber extends Component {
     }
 
     render() {
+        MixinsLog.log();
         return (
             <div className="cart-wrap">
                 <input type="text" onChange={(ev) => this.changeAmount(ev)} value={this.state.amount}/>
@@ -48,4 +51,5 @@ class InputNumber extends Component {
 InputNumber.propTypes = {
     amount: PropTypes.number
 };
+ReactMixins(InputNumber.prototype,MixinsLog);
 export  default InputNumber;
