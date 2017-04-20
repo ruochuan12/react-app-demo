@@ -15,7 +15,10 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import {Router,Route,hashHistory} from 'react-router';
+import {Router,Route,hashHistory} from 'react-router-dom';
+console.log(Router);
+console.log(Route);
+console.log(hashHistory);
 export default class Index extends Component{
 	render(){
 		return (
