@@ -15,7 +15,8 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import {Router,Route,hashHistory} from 'react-router-dom';
+// react-router@2.8.1版本问题
+import {Router,Route,hashHistory} from 'react-router';
 console.log(Router);
 console.log(Route);
 console.log(hashHistory);
