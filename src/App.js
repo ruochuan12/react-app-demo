@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import InputNumber from './InputNumber';
 import FormSubmit from './FormSubmit';
-
+import PullToRefresh from './pull-to-refresh/pull-to-refresh';
+console.log(`PullToRefresh`,PullToRefresh);
 class Author extends Component{
     constructor(props){
         super(props);
@@ -25,7 +26,7 @@ class Author extends Component{
 };
 class App extends Component {
   render() {
-      let value = this.props.author;
+    let value = this.props.author;
     return (
       <div className="App">
         <div className="App-header">
@@ -43,6 +44,7 @@ class App extends Component {
             <InputNumber></InputNumber>
           </div>
           <FormSubmit></FormSubmit>
+          <PullToRefresh>下拉刷新</PullToRefresh>
       </div>
     );
   }
