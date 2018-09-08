@@ -1,9 +1,9 @@
 /**
- * @name: '数字输入框'
- * @author: 'lxchuan12@163.com'
- * @time: 2017-02-27
+ * @desc 数字输入框
+ * @author luoxiaochuan <lxchuan12@163.com>
+ * @date 2017-02-27
  */
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import ReactMixins from 'react-mixin';
 import MixinsLog from './reactMixins';
 
@@ -48,8 +48,8 @@ class InputNumber extends Component {
     }
 }
 ;
-InputNumber.propTypes = {
-    amount: PropTypes.number
-};
+// InputNumber.propTypes = {
+//     amount: PropTypes.number
+// };
 ReactMixins(InputNumber.prototype,MixinsLog);
 export  default InputNumber;
