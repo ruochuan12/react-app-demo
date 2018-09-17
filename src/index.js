@@ -16,7 +16,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 // import TodoList from './TodoList/index';
 import TodoList from './TodoList-with-redux/index';
-import store from './TodoList-with-redux/store';
+import store from './store';
 import { Provider } from 'react-redux';
 import './index.css';
 // react-router@2.8.1版本问题

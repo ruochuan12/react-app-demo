@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 class TodoItem extends Component{
     constructor(props){
         super(props);
         this.handleDel = this.handleDel.bind(this);
     }
     handleDel(){
-        const { content, index, handerDelItem} = this.props;
+        const { content, index, handleDelItem} = this.props;
         console.log(index, content);
-        handerDelItem(index);
+        handleDelItem(index);
     }
     render(){
         const { content } = this.props;
